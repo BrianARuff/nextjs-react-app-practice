@@ -1,60 +1,30 @@
 import * as React from "react";
-import { useState, useEffect, useCallback, memo } from "react";
-import {GetStaticProps} from "next"
+import Form from "../components/Form";
 
-const Form: React.FC = memo((props) => {
-  const [apiData, setApiData] = useState([]);
-  const [formData, setFormData] = useState({ username: "", password: "" });
-
-  const handleSubmit = (e) => {
-    e.preventDefautl();
-  };
-
-  const handleSetFormData = useCallback(
-    (e) => {
-      setFormData({
-        ...formData,
-        [e.target.name]: e.target.value,
-      });
-    },
-    [formData]
-  );
-
+const Index = (props) => {
   return (
     <>
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          display: "flex",
-          flexFlow: "column nowrap",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-        }}
-      >
-        <input onChange={handleSetFormData} type="text" name="username" />
-        <input onChange={handleSetFormData} type="text" name="password" />
-        <button type="submit">Submit</button>
-      </form>
+      <Form />
       {props.data.map((data) => {
         return (
           <ul key={data.id}>
-            <li style={{ color: "red", fontSize: "24px" }}>{data.completed}</li>
             <li>{data.title}</li>
           </ul>
         );
       })}
     </>
   );
-});
+};
 
 type GetStaticPropsTypeInterface = {
   props: {
-    data: {}[]
-  }
-}
+    data: {}[];
+  };
+};
 
-export const getStaticProps: GetStaticProps = () => {
+export default Index;
+
+export const getStaticProps = async (props: GetStaticPropsTypeInterface) => {
   return fetch("https://jsonplaceholder.typicode.com/todos")
     .then((res) => res.json())
     .then((res) => {
@@ -63,5 +33,3 @@ export const getStaticProps: GetStaticProps = () => {
       };
     });
 };
-
-export default Form;
