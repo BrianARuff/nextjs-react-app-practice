@@ -3,6 +3,8 @@
     <option name="RIGHT_MARGIN" value="80" />
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
     <HTMLCodeStyleSettings>
+      <option name="HTML_ATTRIBUTE_WRAP" value="2" />
+      <option name="HTML_ALIGN_TEXT" value="true" />
       <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
       <option name="HTML_ENFORCE_QUOTES" value="true" />
     </HTMLCodeStyleSettings>
@@ -38,6 +40,7 @@
     </codeStyleSettings>
     <codeStyleSettings language="JavaScript">
       <option name="RIGHT_MARGIN" value="80" />
+      <option name="WRAP_COMMENTS" value="true" />
       <option name="WRAP_ON_TYPING" value="1" />
       <option name="SOFT_MARGINS" value="80" />
       <indentOptions>

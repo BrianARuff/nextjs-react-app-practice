@@ -26,7 +26,7 @@ const Index = (props) => {
       <Form />
       <button onClick={handleSetIsVisible}>Hide Data</button>
       <motion.div animate={isVisible ? "active" : "inactive"}
-                  variants={variants}>
+                  variants={variants.FadeFrameRtoL}>
         <Grid container>
           {props.data.map((data) => {
             return (

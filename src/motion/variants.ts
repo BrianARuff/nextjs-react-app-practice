@@ -12,19 +12,24 @@ interface variantsInterface {
 }
 
 export const variants = {
-  active: {
-    opacity: 1,
-    x: ["100vw", "0vw"],
-    transition: {
-      duration: 0.5,
-      type: "spring"
+  FadeFrameRtoL: {
+    active: {
+      opacity: 1,
+      x: ["-100vw", "0vw"],
+      transition: {
+        duration: 0.5,
+        type: "spring"
+      }
+    },
+    inactive: {
+      opacity: 0,
+      x: ["0vw", "100vw"],
+      transition: {
+        duration: 0.5
+      }
     }
   },
-  inactive: {
-    opacity: 0,
-    x: ["0vw", "-100vw"],
-    transition: {
-      duration: 0.5
-    }
-  }
 };
+
+
+export const variants2 = {};
