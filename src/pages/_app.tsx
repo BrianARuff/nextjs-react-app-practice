@@ -1,14 +1,22 @@
 import * as React from "react";
-import { Component } from "react";
-import Index from "./index";
+import { Component, Suspense, lazy } from "react";
+import Spinner from "../components/spinner";
 
-const Application = ({ Component, pageProps }) => {
+const Index = lazy(() => import("./index"));
+import ErrorBoundary from "../components/ErrorBoundary";
+
+
+const App = ({ Component, pageProps }) => {
   return (
     <Component {...pageProps}>
-      <Index />
+      <ErrorBoundary>
+        <Suspense fallback={Spinner}>
+          <Index />
+        </Suspense>
+      </ErrorBoundary>
     </Component>
   );
 };
 
 
-export default Application;
+export default App;

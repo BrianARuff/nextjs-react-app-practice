@@ -4,5 +4,111 @@
       "id": "./node_modules/next/dist/client/dev/noop.js",
       "file": "static/chunks/0.js"
     }
+  ],
+  "./index": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/defineProperty.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/getPrototypeOf.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/inherits.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/iterableToArray.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/nonIterableSpread.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/toConsumableArray.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@emotion/memoize/dist/memoize.browser.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/framer-motion/dist/framer-motion.es.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/framesync/dist/framesync.es.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/hey-listen/dist/hey-listen.es.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/next/dist/next-server/lib/amp-context.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/next/dist/next-server/lib/amp.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/next/dist/next-server/lib/head-manager-context.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/next/dist/next-server/lib/head.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/next/dist/next-server/lib/side-effect.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/next/head.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/popmotion/dist/popmotion.es.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/style-value-types/dist/style-value-types.es.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/tslib/tslib.es6.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./src/components/Form.tsx",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./src/motion/variants.ts",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./src/pages/index.tsx",
+      "file": "static/chunks/1.js"
+    }
   ]
 }
