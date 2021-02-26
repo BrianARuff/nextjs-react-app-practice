@@ -7,10 +7,8 @@ type Props = {
   };
 };
 
-const Form: React.NamedExoticComponent<
-  | React.RefAttributes<React.Component<Props, any, any>>
-  | { children?: React.ReactNode }
-> = memo((props) => {
+const Form: React.NamedExoticComponent<| React.RefAttributes<React.Component<Props, any, any>>
+  | { children?: React.ReactNode }> = memo((props) => {
   const [formData, setFormData] = useState({ username: "", password: "" });
 
   const handleSubmit = (e) => {
@@ -21,7 +19,7 @@ const Form: React.NamedExoticComponent<
     (e) => {
       setFormData({
         ...formData,
-        [e.target.name]: e.target.value,
+        [e.target.name]: e.target.value
       });
     },
     [formData]
