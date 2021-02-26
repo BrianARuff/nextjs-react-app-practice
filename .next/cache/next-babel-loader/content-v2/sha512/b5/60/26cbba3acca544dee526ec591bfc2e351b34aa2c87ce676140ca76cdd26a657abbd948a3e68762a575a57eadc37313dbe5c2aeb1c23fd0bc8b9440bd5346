@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const variants = {\n  active: {\n    opacity: 1,\n    x: [\"100vw\", \"0vw\"],\n    transition: {\n      duration: 0.5,\n      type: \"spring\"\n    }\n  },\n  inactive: {\n    opacity: 0,\n    x: [\"0vw\", \"-100vw\"],\n    transition: {\n      duration: 0.5\n    }\n  }\n};","map":null,"metadata":{},"sourceType":"module"}

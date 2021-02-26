@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport * as React from \"react\";\nimport { CircularProgress } from \"@material-ui/core\";\n\nconst Spinner = () => {\n  return /*#__PURE__*/_jsx(CircularProgress, {\n    color: \"primary\"\n  });\n};\n\nexport default Spinner;","map":null,"metadata":{},"sourceType":"module"}

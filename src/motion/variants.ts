@@ -22,7 +22,7 @@ export const variants = {
   },
   inactive: {
     opacity: 0,
-    x: "-100vw",
+    x: ["0vw", "-100vw"],
     transition: {
       duration: 0.5
     }

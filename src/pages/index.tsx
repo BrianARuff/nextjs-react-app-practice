@@ -30,7 +30,7 @@ const Index = (props) => {
         <Grid container>
           {props.data.map((data) => {
             return (
-              <Grid key={data.id} item xs={12} sm={6} md={4} lg={3} xl={2}>
+              <Grid style={{border: "1px solid black"}} key={data.id} item xs={12} sm={6} md={4} lg={3} xl={2}>
                 <ul>
                   <li>{data.title}</li>
                 </ul>
@@ -49,6 +49,14 @@ export const getStaticProps =  () => {
   return fetch("https://jsonplaceholder.typicode.com/todos")
     .then((res) => res.json())
     .then((res) => {
+      if(!res) {
+        return {
+          redirect: {
+            destination: "/",
+            permanent: false
+          }
+        }
+      }
       return {
         props: { data: res }
       };
