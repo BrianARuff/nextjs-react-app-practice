@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState, useEffect, useCallback, memo } from "react";
+import { useState, useCallback, memo } from "react";
 
 export const config = { amp: true }
 

@@ -27,7 +27,5 @@ export default class ErrorBoundary extends React.Component<{}, ErrorBoundaryStat
       ? <h1>Something went wrong.</h1>
       :
       this.props.children;
-
   }
-
 }
