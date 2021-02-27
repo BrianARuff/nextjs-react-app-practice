@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Component, Suspense, lazy } from "react";
+import { Router,  } from "next/router"
 import Spinner from "../components/spinner";
 
 const Index = lazy(() => import("./index"));
